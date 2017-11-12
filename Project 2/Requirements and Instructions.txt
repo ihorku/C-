@@ -1,0 +1,96 @@
+The objective of this project is to practice programming, using the STL container classes,
+iterators, C++ strings, and I/O processing.
+
+The task is to implement a simple interactive line-oriented text editor, named led (acronym for Line-oriented
+text EDitor), that can be used to create, edit, and save text files. Its command set and syntax might look a 
+little like that of the mighty editor for the Unix operating system, led is a toy line editor with very limited
+command set and functionality.
+Led also allows its users to update existing files by deleting, changing and inserting lines in files. It always
+operates on a copy of any file it is editing, which is stored in a temporary storage called the "buffer". Led 
+accesses the lines in its buffer by their corresponding line address, which are consecutive numbers, starting at
+line 1. When the user inserts or deletes lines of text in a file, the line address after the inserted or deleted
+lines are automatically adjusted.
+
+To write out the buffer to the original file, the user gives the "w" (write) command; otherwise, any chages
+not explicitly saved with a w command are lost.
+
+To start led on a text file named a.txt , the user types the following command in a Linux/Mac/Windows specific
+shell and then presses the return key.
+
+Led displays a ":" prompt to indicate that it is now operating in command mode.
+
+When started on a nonexistent file, say, b.txt , led creates an empty buffer and responds "b.txt [New File]".
+However, led does not create the file b.txt unless and until a w command is entered.
+
+Finally, when started without a filename, led creates an empty buffer and responds as follows: "? [New File]".
+
+Led has two distinct operating modes:
+- command mode: led displays a ":" prompt to indicate it is operating in command mode. Once the return key is
+                pressed in command mode, led interprets the input characters as a command, and then it executes
+				that command.
+- input mode:   The a (append) and i (insert) commands put led in input mode. Led interprets every input character 
+                as text, displaying no prompts and recognizing no commands in this mode. We can now input as many
+				lines of text as you wish into the buffer, pressing the return key at the end of each line. To put 
+				it back in command mode, you type a single dot character "." on a line by itself and then press the
+				return key. This line is not considered part of the input text.
+				
+Led command lines have a simple structure:
+
+				[line address 1][,[line address 2]][command]
+				
+where the brackets [ ] represent the optional parts of the command line.
+A line address is either a line number, a dot character (.), or a dollar sign character ($), as defined below:
+
+                --------------------------------------------------------------   
+                line address | meaning
+				--------------------------------------------------------------
+     				 .       | The address of the current line in the buffer
+				---------------------------------------------------------------
+                     $       | The address of the last line in the buffer
+                ---------------------------------------------------------------
+                a line number| An integer n such that 1 <= n <= $ 	
+                ---------------------------------------------------------------
+
+A command is a single character symbol:
+
+----------------------------------------------------------------------------------------------------------------
+Command Line | Function
+----------------------------------------------------------------------------------------------------------------
+y a "enter"	 | Switches to input mode, reads input lines and appends them to the buffer after line y. The current
+             | line address is set to last line entered.
+-----------------------------------------------------------------------------------------------------------------
+y i "enter"	 | Switches to input mode, reads input lines and inserts them to the buffer before line y. The current
+             | line address is set to last line entered.
+-----------------------------------------------------------------------------------------------------------------
+x,y r "enter"| Removes (deletes) the line range x through y from the buffer. If there is a line after the deleted 
+             | line range, then the current line address is set to that line. Otherwise the current line address
+             | is set to the line before the deleted line range.
+-----------------------------------------------------------------------------------------------------------------
+x,y p "enter"| Prints the line range x through y. The current line address is set to the last line printed.
+-----------------------------------------------------------------------------------------------------------------
+x,y n "enter"| Prints the line range x through y, prefixing each line by its line number and a tab character. 
+             | The current line address is set to the last line printed.
+-----------------------------------------------------------------------------------------------------------------
+x,y c "enter"| Prompts for and reads the text to be changed, and then prompts for and reads the replacement text.
+             | Search each addressed line for an occurrence of the specified string and changes all matched strings
+             | to the replacement text.
+-----------------------------------------------------------------------------------------------------------------
+y u "enter"  | Moves the current line up by y lines, but never beyond the first line, and prints this new current
+             | line.
+------------------------------------------------------------------------------------------------------------------
+y d "enter"	 | Moves the current line down by y lines, but never beyond the last line, and prints this new current
+             | line.
+------------------------------------------------------------------------------------------------------------------
+w "enter"	 | Writes out entire buffer to its associated file. If the buffer is not associated with a user named
+             | file, it prompts for and reads  the name of the associated file.
+------------------------------------------------------------------------------------------------------------------
+= "enter"	 | Prints the current line address.
+------------------------------------------------------------------------------------------------------------------
+ "enter"	 | same as 1d
+------------------------------------------------------------------------------------------------------------------
+
+Example of commands: 1a, p or 2,3p  
+
+
+
+ 
