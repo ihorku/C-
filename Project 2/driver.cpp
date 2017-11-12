@@ -1,7 +1,3 @@
-// Assignmetn 2 
-// 
-// written by Ihor Kufley
-
 
 #include <iostream>
 #include <string>
