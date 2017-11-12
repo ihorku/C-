@@ -1,0 +1,399 @@
+
+C:\led>cl /EHsc Led.cpp Command.cpp driver.cpp /link /out:led.exe
+Microsoft (R) C/C++ Optimizing Compiler Version 18.00.21005.1 for x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+Led.cpp
+Command.cpp
+driver.cpp
+Generating Code...
+Microsoft (R) Incremental Linker Version 12.00.21005.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:Led.exe
+/out:led.exe
+Led.obj
+Command.obj
+driver.obj
+
+C:\led>led a.txt
+"a.txt"  [New File]
+Entering command mode.
+: i
+int main()
+
+        Led led(filename);
+        led.run();
+        return 0 // done
+}
+.
+: p
+}
+: 1,
+int main()
+
+        Led led(filename);
+        led.run();
+        return 0 // done
+}
+: 1,n
+1       int main()
+2
+3               Led led(filename);
+4               led.run();
+5               return 0 // done
+6       }
+: u
+        return 0 // done
+: c
+change what? 0
+    to what? 0;
+: 1,$n
+1       int main()
+2
+3               Led led(filename);
+4               led.run();
+5               return 0; // done
+6       }
+: 1
+int main()
+: i
+
+
+
+#include<iostream>
+#include<string?
+using std::cout;
+using std::endl;
+using std::string;
+#include "Led.h"
+
+.
+: d
+EOF reached
+}
+: 1,$
+
+
+
+#include<iostream>
+#include<string?
+using std::cout;
+using std::endl;
+using std::string;
+#include "Led.h"
+
+int main()
+
+        Led led(filename);
+        led.run();
+        return 0; // done
+}
+: 1
+
+: d
+
+: p
+
+: =
+2
+: -----
+invalid line address : -----
+: 1,$n
+1
+2
+3
+4       #include<iostream>
+5       #include<string?
+6       using std::cout;
+7       using std::endl;
+8       using std::string;
+9       #include "Led.h"
+10
+11      int main()
+12
+13              Led led(filename);
+14              led.run();
+15              return 0; // done
+16      }
+: =
+16
+: 5c
+change what? ?
+    to what? >
+: p
+#include<string>
+: 11c
+change what? ()
+    to what? (int argc, char * argv[])
+: p
+int main(int argc, char * argv[])
+: =
+11
+: 1,3r
+: p
+#include<iostream>
+: =
+1
+: ,$
+#include<iostream>
+#include<string>
+using std::cout;
+using std::endl;
+using std::string;
+#include "Led.h"
+
+int main(int argc, char * argv[])
+
+        Led led(filename);
+        led.run();
+        return 0; // done
+}
+: =
+13
+: 1,n
+1       #include<iostream>
+2       #include<string>
+3       using std::cout;
+4       using std::endl;
+5       using std::string;
+6       #include "Led.h"
+7
+8       int main(int argc, char * argv[])
+9
+10              Led led(filename);
+11              led.run();
+12              return 0; // done
+13      }
+: 1i
+// Driver program to test the
+// Led class implemented in assignment 2
+.
+: 1,5n
+1       // Driver program to test the
+2       // Led class implemented in assignment 2
+3       #include<iostream>
+4       #include<string>
+5       using std::cout;
+: 10,$n
+10      int main(int argc, char * argv[])
+11
+12              Led led(filename);
+13              led.run();
+14              return 0; // done
+15      }
+: 1,n
+1       // Driver program to test the
+2       // Led class implemented in assignment 2
+3       #include<iostream>
+4       #include<string>
+5       using std::cout;
+6       using std::endl;
+7       using std::string;
+8       #include "Led.h"
+9
+10      int main(int argc, char * argv[])
+11
+12              Led led(filename);
+13              led.run();
+14              return 0; // done
+15      }
+: 11a
+        string filename; // an empty line
+        // determine the filename
+
+        switch(argc)
+        {
+        case 1: // no file name
+        brake; // spelling error
+
+        case 2: // read from argument string
+        filename = argv[1]; // initialize filename
+                brake;
+
+        default:
+        cout << "too many arguments - all discarded") << endl;
+                brake;
+        }
+.
+: 1,$n
+1       // Driver program to test the
+2       // Led class implemented in assignment 2
+3       #include<iostream>
+4       #include<string>
+5       using std::cout;
+6       using std::endl;
+7       using std::string;
+8       #include "Led.h"
+9
+10      int main(int argc, char * argv[])
+11
+12              string filename; // an empty line
+13              // determine the filename
+14
+15              switch(argc)
+16              {
+17              case 1: // no file name
+18              brake; // spelling error
+19
+20              case 2: // read from argument string
+21              filename = argv[1]; // initialize filename
+22                      brake;
+23
+24              default:
+25              cout << "too many arguments - all discarded") << endl;
+26                      brake;
+27              }
+28              Led led(filename);
+29              led.run();
+30              return 0; // done
+31      }
+: 18,26c
+change what? brake
+    to what? break
+: 18,26
+        break; // spelling error
+
+        case 2: // read from argument string
+        filename = argv[1]; // initialize filename
+                break;
+
+        default:
+        cout << "too many arguments - all discarded") << endl;
+                break;
+: 18c
+change what? // spelling error
+    to what?
+: ,n
+18              break;
+: .n
+18              break;
+: .,.
+        break;
+: =
+18
+: 2d
+        case 2: // read from argument string
+: 8d
+        Led led(filename);
+: $
+}
+: 1,n
+1       // Driver program to test the
+2       // Led class implemented in assignment 2
+3       #include<iostream>
+4       #include<string>
+5       using std::cout;
+6       using std::endl;
+7       using std::string;
+8       #include "Led.h"
+9
+10      int main(int argc, char * argv[])
+11
+12              string filename; // an empty line
+13              // determine the filename
+14
+15              switch(argc)
+16              {
+17              case 1: // no file name
+18              break;
+19
+20              case 2: // read from argument string
+21              filename = argv[1]; // initialize filename
+22                      break;
+23
+24              default:
+25              cout << "too many arguments - all discarded") << endl;
+26                      break;
+27              }
+28              Led led(filename);
+29              led.run();
+30              return 0; // done
+31      }
+: w
+"a.txt" 31 lines written
+: q
+quitting led . . . bye.
+
+C:\led>led a.txt
+"a.txt" 31 lines
+Entering command mode.
+: 2a
+#include<cstdlib>
+.
+: 1,n
+1       // Driver program to test the
+2       // Led class implemented in assignment 2
+3       #include<cstdlib>
+: 1,$n
+1       // Driver program to test the
+2       // Led class implemented in assignment 2
+3       #include<cstdlib>
+4       #include<iostream>
+5       #include<string>
+6       using std::cout;
+7       using std::endl;
+8       using std::string;
+9       #include "Led.h"
+10
+11      int main(int argc, char * argv[])
+12
+13              string filename; // an empty line
+14              // determine the filename
+15
+16              switch(argc)
+17              {
+18              case 1: // no file name
+19              break;
+20
+21              case 2: // read from argument string
+22              filename = argv[1]; // initialize filename
+23                      break;
+24
+25              default:
+26              cout << "too many arguments - all discarded") << endl;
+27                      break;
+28              }
+29              Led led(filename);
+30              led.run();
+31              return 0; // done
+32      }
+: 100u
+BOF reached
+// Driver program to test the
+: 100d
+EOF reached
+}
+: =
+32
+: 4
+#include<iostream>
+:
+#include<string>
+:
+using std::cout;
+:
+using std::endl;
+:
+using std::string;
+:
+#include "Led.h"
+: =
+9
+: u
+using std::string;
+: u
+using std::endl;
+: =
+7
+: q
+Save changes to "a.txt" (y/n)?
+yes
+invalid answer yes
+enter y for yes and n for no.
+Save changes to "a.txt" (y/n)?
+y
+"a.txt" 32 lines written
+quitting led . . . bye.
+
+C:\led>
