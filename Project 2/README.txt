@@ -1,3 +1,6 @@
+Detailed information about the project can be found in "Requirements and Instructions.txt" file
+
+
 How to run the program.
 
  
@@ -15,3 +18,4 @@ In my case it was C:\led>
  cl /EHsc Led.cpp Command.cpp driver.cpp /link /out:led.exe
 
 Now the program is compiled and can be run from here or from traditional Command Prompt just entering led (and file name if we wish).
+
