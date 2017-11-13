@@ -77,27 +77,27 @@ then the accumulator is used as the only operand in that operation.
 
 | Input | Command | Operand | Operation | Description |
 | ---- | ---- | ----- | ---- | ---- |
-|+*i* | + | *i* | *a*<-*a*+*i* | add |
-|++*i* | + | +*i* | *a*<-*a*+*i* | add |
-|+-*i* | + | -*i* | *a*<-*a*+(-*i*) | add |
-|-*i* | - | *i* | *a*<-*a*-*i* | substract |
-|-+*i* | - | +*i* | *a*<-*a*-*i* | substract |
-|--*i* | - | -*i* | *a*<-*a*-(-*i*) | substract |
-|\**i* | \* | *i* | *a*<-*a*\**i* | multiply |
-|\*+*i* | \* | +*i* | *a*<-*a*\**i* | multiply |
-|\*-*i* | \* | -*i* | *a*<-*a*\*(-*i*) | multiply |
-|/*i* | / | *i* | *a*<-*a*/*i* | divide |
-|/+*i* | / | +*i* | *a*<-*a*/*i* | divide |
-|/-*i* | / | -*i* | *a*<-*a*/(-*i*) | divide |
-|%*i* | % | *i* | *a*<-*a*%*i* | modulus |
-|%+*i* | % | +*i* | *a*<-*a*%*i* | modulus |
-|%-*i* | % | -*i* | *a*<-*a*%(-*i*) | modulus |
-|=*i* | = | *i* | *a*<-*i* | reset *a* |
-|=+*i* | = | +*i* | *a*<-*i* | reset *a* | 
-|=-*i* | = | -*i* | *a*<-(-*i*) | reset *a* |
-|*c* | *c* |  | *a*<-0 | clear *a* |
-|*n* | *n* |  | *a*<- -*a* | negate *a* |
-|*f* | *f* |  | *a*<-*a*! | factorial of *a* |
+|+*i* | + | *i* | *a*<- *a*+*i* | add |
+|++*i* | + | +*i* | *a*<- *a*+*i* | add |
+|+-*i* | + | -*i* | *a*<- *a*+(-*i*) | add |
+|-*i* | - | *i* | *a*<- *a*-*i* | substract |
+|-+*i* | - | +*i* | *a*<- *a*-*i* | substract |
+|--*i* | - | -*i* | *a*<- *a*-(-*i*) | substract |
+|\**i* | \* | *i* | *a*<- *a*\**i* | multiply |
+|\*+*i* | \* | +*i* | *a*<- *a*\**i* | multiply |
+|\*-*i* | \* | -*i* | *a*<- *a*\*(-*i*) | multiply |
+|/*i* | / | *i* | *a*<- *a*/*i* | divide |
+|/+*i* | / | +*i* | *a*<- *a*/*i* | divide |
+|/-*i* | / | -*i* | *a*<- *a*/(-*i*) | divide |
+|%*i* | % | *i* | *a*<- *a*%*i* | modulus |
+|%+*i* | % | +*i* | *a*<- *a*%*i* | modulus |
+|%-*i* | % | -*i* | *a*<- *a*%(-*i*) | modulus |
+|=*i* | = | *i* | *a*<- *i* | reset *a* |
+|=+*i* | = | +*i* | *a*<- *i* | reset *a* | 
+|=-*i* | = | -*i* | *a*<- (-*i*) | reset *a* |
+|*c* | *c* |  | *a*<- 0 | clear *a* |
+|*n* | *n* |  | *a*<-  -*a* | negate *a* |
+|*f* | *f* |  | *a*<- *a*! | factorial of *a* |
 |*h* | *h* |  | *hailstone(a)*| prints hailstone(*a*), returns its length
 |*q* | *q* |  |      | quit
 
