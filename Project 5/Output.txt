@@ -1,0 +1,84 @@
+the phrase "Was it a car or a cat I saw?" is a palindrome
+the phrase "Was it a car or a cat U saw?" is not a palindrome
+-----------------------------------------------------
+The second largest element in int_vec is 5
+-----------------------------------------------------
+        Dr 1
+         I 4
+       Not 4
+  Sam-I-am 1
+     Seuss 1
+         a 4
+       and 1
+  anywhere 1
+       box 1
+        do 1
+       eat 3
+      eggs 1
+       fox 1
+     green 1
+       ham 1
+      here 1
+     house 1
+        in 2
+      like 1
+     mouse 1
+       not 4
+        or 1
+      them 3
+     there 1
+      with 2
+     would 3
+-----------------------------------------------------
+         a 4
+       and 1
+  anywhere 1
+       box 1
+        do 1
+        Dr 1
+       eat 3
+      eggs 1
+       fox 1
+     green 1
+       ham 1
+      here 1
+     house 1
+         I 4
+        in 2
+      like 1
+     mouse 1
+       Not 8
+        or 1
+  Sam-I-am 1
+     Seuss 1
+      them 3
+     there 1
+      with 2
+     would 3
+-----------------------------------------------------
+         a 1 2
+       and 5
+  anywhere 4
+       box 1
+        do 6
+        Dr 6
+       eat 3 4 5
+      eggs 5
+       fox 1
+     green 5
+       ham 5
+      here 3
+     house 2
+         I 3 4 5 6
+        in 1 2
+      like 6
+     mouse 2
+       Not 1 2 3 4 5 6
+        or 3
+  Sam-I-am 6
+     Seuss 6
+      them 3 4 6
+     there 3
+      with 1 2
+     would 3 4 5
+Press any key to continue . . .
