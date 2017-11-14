@@ -1,4 +1,4 @@
-##Instructions##
+## Instructions ##
 
 Every input line must begin with a single character command. If the command is a binary
 operator, then it must be followed by an unsigned or a signed integer. For unary commands,
@@ -73,7 +73,7 @@ the accumulator is used as the left operand in that operatin, and if the next op
 then the accumulator is used as the only operand in that operation.
 
 
-####Command list####
+#### Command list ####
 
 | Input | Command | Operand | Operation | Description |
 | ---- | ---- | ----- | ---- | ---- |
@@ -105,7 +105,7 @@ then the accumulator is used as the only operand in that operation.
 * *i* denotes the input number, which may or may not be signed
 * input lines like ?+*i* are effectively the same as ?i, where ? denotes a binary command
 
-####Programming requirements####
+#### Programming requirements ####
 
 - no dynamic storage allocation; that is, no use of the `new` or `delete` operators.
 - no C-style raw arrays.
