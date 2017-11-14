@@ -17,11 +17,12 @@ out of tokens or decides to stop playing:
 5. Free dynamic memory consumed by the reels
 
 Step 2.1 expands to these steps:
-    a. generate a random integer *n*, 0<=*n*<=3
-	b. generate a random width *w*, 1<=*w*<=25
-	c. if *n* = 0 then let reel *r* point to a **Rhombus** object of width *w*.
-	d. if *n* = 1 then let reel *r* point to a **Isosceles** object of width *w*
-	e. if *n* = 2 then let reel *r* point to a **RightTrinagle** object of width *w*
-	f. if *n* = 3 then
-	    i.  generate a random height *h*, 1<=*h*<=25
-		ii. let reel *r* point to a **Rectange** object of width *w* and height *h*
+a. generate a random integer *n*, 0<=*n*<=3
+b. generate a random width *w*, 1<=*w*<=25
+c. if *n* = 0 then let reel *r* point to a **Rhombus** object of width *w*.
+d. if *n* = 1 then let reel *r* point to a **Isosceles** object of width *w*
+e. if *n* = 2 then let reel *r* point to a **RightTrinagle** object of width *w*
+f. if *n* = 3 then
+
+i.  generate a random height *h*, 1<=*h*<=25
+ii. let reel *r* point to a **Rectange** object of width *w* and height *h*
