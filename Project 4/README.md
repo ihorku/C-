@@ -23,5 +23,5 @@ Step 2.1 expands to these steps:
 * if *n* = 1 then let reel *r* point to a **Isosceles** object of width *w*
 * if *n* = 2 then let reel *r* point to a **RightTrinagle** object of width *w*
 * if *n* = 3 then
-  i.  generate a random height *h*, 1<=*h*<=25
-  ii. let reel *r* point to a **Rectange** object of width *w* and height *h*
+- generate a random height *h*, 1<=*h*<=25
+- let reel *r* point to a **Rectange** object of width *w* and height *h*
